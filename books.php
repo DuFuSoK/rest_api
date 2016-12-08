@@ -18,15 +18,16 @@ $request_method=$_SERVER["REQUEST_METHOD"];
 
 switch($request_method)
 	{
-		case 'GET':
-			// Retrive Books
+    case 'GET':
+			// Retrive Products
 			if(!empty($_GET["book_id"]))
 			{
-        echo 'Specific book';
+				$book_id=intval($_GET["book_id"]);
+				get_books($book_id);
 			}
 			else
 			{
-				echo 'List of all books';
+				get_books();
 			}
 			break;
 		case 'POST':
@@ -66,4 +67,7 @@ switch($request_method)
 
   // Close database connection
   	mysqli_close($db);
+
+
+
 ?>
