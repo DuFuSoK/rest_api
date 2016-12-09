@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hostiteľ: 127.0.0.1
--- Čas generovania: Št 08.Dec 2016, 14:33
+-- Čas generovania: Pi 09.Dec 2016, 14:19
 -- Verzia serveru: 5.7.14
 -- Verzia PHP: 5.6.25
 
@@ -29,18 +29,18 @@ SET time_zone = "+00:00";
 CREATE TABLE `bookcase` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Sťahujem dáta pre tabuľku `bookcase`
 --
 
 INSERT INTO `bookcase` (`id`, `name`) VALUES
-(1, 'Slovenské rozprávky'),
-(2, 'Malý princ'),
-(3, 'Da Vinciho kód'),
-(4, 'Hlava XXII'),
-(5, 'Krstný otec');
+(1, 'Hlava XXII'),
+(2, 'Havran'),
+(3, 'Odviate vetrom'),
+(4, 'Na zapade nic nove'),
+(7, 'Smely zajko v Afrike');
 
 --
 -- Kľúče pre exportované tabuľky
@@ -60,7 +60,7 @@ ALTER TABLE `bookcase`
 -- AUTO_INCREMENT pre tabuľku `bookcase`
 --
 ALTER TABLE `bookcase`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

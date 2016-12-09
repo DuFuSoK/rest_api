@@ -1,3 +1,4 @@
-RewriteEngine On # Turn on the rewriting engine
-RewriteRule ^books/?$ books.php [NC,L]
-RewriteRule ^books/([0-9]+)/?$ books.php?book_id=$1 [NC,L]
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^books/([0-9]+)?$ book.php?book_id=$1 [L]
+</IfModule>
